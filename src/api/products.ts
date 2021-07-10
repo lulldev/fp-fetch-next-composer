@@ -1,8 +1,8 @@
 
 import { pipe } from 'fp-ts/function';
-import { fetcher } from '../core/fetch';
+import { fetcherNext } from '../core/fetch';
 
 export const getAllProducts = () =>
   pipe(
-    fetcher('all_products'),
+    fetcherNext('all_products'),
   );
